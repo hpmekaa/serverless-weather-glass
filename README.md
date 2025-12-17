@@ -16,6 +16,7 @@ Unlike standard weather apps, this project utilizes a **Serverless Architecture*
 
 ## ⚙️ Architecture
 **[User Client]** -->  **[AWS Amplify Hosting]**
+
        |
        v
 **[AWS Lambda Proxy]** --> **[OpenWeatherMap API]**

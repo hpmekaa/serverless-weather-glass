@@ -1,7 +1,7 @@
 # Serverless Glassmorphism Weather Dashboard
 
 ## 🚀 Live Demo
-[Link to your AWS Amplify URL here]
+[https://dev.d1z7et9xtoposw.amplifyapp.com/]
 
 ## 💡 Project Overview
 A cloud-native weather dashboard that visualizes real-time conditions using a physics-based **Glassmorphism UI**.

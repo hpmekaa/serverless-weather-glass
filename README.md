@@ -1,16 +1,27 @@
-# React + Vite
+# Serverless Glassmorphism Weather Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🚀 Live Demo
+[Link to your AWS Amplify URL here]
 
-Currently, two official plugins are available:
+## 💡 Project Overview
+A cloud-native weather dashboard that visualizes real-time conditions using a physics-based **Glassmorphism UI**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Unlike standard weather apps, this project utilizes a **Serverless Architecture**. I engineered a custom proxy server using **AWS Lambda** to securely fetch data from OpenWeatherMap, effectively masking API keys and eliminating CORS issues without spinning up a dedicated backend server.
 
-## React Compiler
+## 🛠️ Tech Stack
+* **Frontend:** React.js, Tailwind CSS, Vite
+* **Backend:** AWS Lambda (Node.js)
+* **Hosting:** AWS Amplify
+* **Design:** Glassmorphism, React-Parallax-Tilt
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ⚙️ Architecture
+**[User Client]** -->  **[AWS Amplify Hosting]**
+       |
+       v
+**[AWS Lambda Proxy]** --> **[OpenWeatherMap API]**
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Key Features
+* **Serverless Backend:** Secure API key management via AWS Lambda.
+* **Physics-Based UI:** 3D Tilt effects that respond to mouse movement.
+* **Vector Assets:** Scalable SVG icons (`react-icons`) for high-DPI displays.
+* **Dynamic Styling:** Background gradients change based on weather conditions (Clear, Rain, Snow, etc.).

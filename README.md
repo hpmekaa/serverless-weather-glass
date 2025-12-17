@@ -15,10 +15,12 @@ Unlike standard weather apps, this project utilizes a **Serverless Architecture*
 * **Design:** Glassmorphism, React-Parallax-Tilt
 
 ## ⚙️ Architecture
-[User Client] -->  [AWS Amplify Hosting]
-       |
-       v
-[AWS Lambda Proxy] --> [OpenWeatherMap API]
+    User Client -->  AWS Amplify Hosting
+
+        |
+        V
+     
+    AWS Lambda Proxy --> OpenWeatherMap API
 
 ## ✨ Key Features
 * **Serverless Backend:** Secure API key management via AWS Lambda.
